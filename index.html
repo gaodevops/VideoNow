@@ -2,13 +2,22 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>WebRTC DEMO</title>
+    <title>Video Now</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <video id="localVideo"></video>
-    <div id="remoteVideos"></div>
-<script src="vendor/SimpleWebRTC/latest.js"></script>
+    <div class="container">
+        <div>
+            <input type="text" id="channel-name" placeholder="输入一个频道名，可以是任意字符">
+            <button type="button" id="start-button">开始视频</button>
+        </div>
+        <div>
+            <video id="localVideo"></video>
+            <div id="remoteVideos"></div>
+        </div>
+    </div>
+<script src="vendor/webrtc/latest.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
