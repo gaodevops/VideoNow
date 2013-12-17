@@ -8,13 +8,18 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <input type="text" id="channel-name" placeholder="输入一个频道名，可以是任意字符">
-            <button type="button" id="start-button">开始视频</button>
+        <div id="channel">
+            <form  class="form-inline" role="form">
+                <div class="form-group">
+                    <label class="sr-only" for="channel-name">频道名</label>
+                    <input type="text" class="form-control" id="channel-name" placeholder="输入任意频道名">
+                </div>
+                <button type="button" id="start-button" class="btn btn-primary">开始视频</button>
+            </form>
         </div>
         <div>
-            <video id="localVideo"></video>
-            <div id="remoteVideos"></div>
+            <video id="localVideo" class="img-thumbnail hidden"></video>
+            <div id="remoteVideos" class="img-thumbnail"></div>
         </div>
     </div>
 <script src="vendor/webrtc/latest.js"></script>

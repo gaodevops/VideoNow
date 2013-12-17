@@ -17,6 +17,9 @@ startButton.onclick = function(){
             // you can name it anything
             webrtc.joinRoom(channelName.value);
         });
+
+        //显示本地视频窗口
+        localVideo.classList.remove('hidden');
     }else{
         alert('请输入频道名');
     }

@@ -1,3 +1,9 @@
+body {
+    background-image: url("http://bingimage.sinaapp.com");
+}
+#channel {
+    margin: 20px;
+}
 #remoteVideos video {
     height: 250px;
 }
